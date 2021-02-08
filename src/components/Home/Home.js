@@ -1,5 +1,46 @@
 import React from "react";
 
-export default function () {
-  return <div>Home</div>;
+import "./home.scss";
+import netflix from "../../assets/netflix.svg";
+function Home() {
+  return (
+    <div className="wrapper">
+      <header>
+        <nav className="head">
+          <div className="navbar">
+            <div>
+              <img src={netflix} className="logo" alt="netflix-logo" />
+            </div>
+            <div>
+              <button>Sign in</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div className="overlay"></div>
+
+      <div className="home">
+        <div className="body">
+          <div>
+            <div className="title">
+              Unlimited movies, TV <br /> shows, and more.
+            </div>
+            <div className="sub-title">Watch anywhere. Cancel anytime.</div>
+            <div className="signin">
+              <p>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </p>
+              <div>
+                <input type="email" placeholder="Email address" />
+                <button>GET STARTED <span>{'>'}</span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default Home;

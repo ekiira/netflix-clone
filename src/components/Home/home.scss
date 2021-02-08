@@ -1,0 +1,122 @@
+.wrapper {
+  height: 100vh;
+  background: url("../../assets/home.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  padding: 20px 30px;
+  background: transparent;
+  color: white;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-flow: row nowrap;
+  }
+
+  div {
+    z-index: inherit;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  button {
+    border: none;
+    background-color: #e50914;
+    height: 30px;
+    width: 80px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+
+.overlay {
+  &::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.6;
+    z-index: 0;
+  }
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  color: white;
+
+  div {
+    z-index: inherit;
+  }
+  .title {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .sub-title {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  .signin {
+    div {
+      display: flex;
+      width: 100%;
+    }
+    p {
+      margin: 25px 0;
+      font-size: 20px;
+    }
+    input {
+      height: 35px;
+      padding: 10px;
+      width: 60%;
+      border: none;
+    }
+    button {
+      border: none;
+      height: 100%;
+      height: 55px;
+      width: 40%;
+      background-color: #e50914;
+      white-space: nowrap;
+      padding: 10px;
+      color: #fff;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
