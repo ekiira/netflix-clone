@@ -1,0 +1,14 @@
+.faq {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+
+    .title {
+        font-size: 50px;
+    }
+}
