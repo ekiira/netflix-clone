@@ -1,14 +1,82 @@
 .faq {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: #fff;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 70px 0;
 
-    .title {
-        font-size: 50px;
+  .title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .list {
+    width: 70%;
+    margin: 30px auto;
+    padding-left: 0;
+    .item {
+      list-style: none;
+      margin: 0;
+      margin-bottom: 10px;
+      position: relative;
     }
+
+    button {
+      border: none;
+      font-size: 26px;
+      background-color: #303030;
+      color: #fff;
+      text-align: left;
+      font-weight: 400;
+      width: 100%;
+      padding: 20px 30px;
+      position: relative;
+
+      .click-img {
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        width: 25px;
+      }
+    }
+  }
+
+  .signin {
+    text-align: center;
+    padding-top: 10px;
+    div {
+      display: flex;
+      width: 50%;
+      margin: 0 auto;
+    }
+    p {
+      margin: 25px 0;
+      font-size: 20px;
+    }
+    input {
+      height: 35px;
+      padding: 10px;
+      width: 60%;
+      border: none;
+    }
+    button {
+      border: none;
+      height: 100%;
+      height: 55px;
+      width: 40%;
+      background-color: #e50914;
+      white-space: nowrap;
+      padding: 10px;
+      color: #fff;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
 }

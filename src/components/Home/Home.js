@@ -2,6 +2,8 @@ import React from "react";
 
 import "./home.scss";
 import netflix from "../../assets/netflix.svg";
+import chevronRight from '../../assets/chevron-right.svg'
+
 function Home() {
   return (
     <div className="wrapper">
@@ -33,7 +35,7 @@ function Home() {
               </p>
               <div>
                 <input type="email" placeholder="Email address" />
-                <button>GET STARTED <span>{'>'}</span> </button>
+                <button>GET STARTED <span><img src={chevronRight} style={{width: '15px'}} alt='chevron-right'/></span></button>
               </div>
             </div>
           </div>
