@@ -12,7 +12,7 @@
   }
 
   .list {
-    width: 70%;
+    width: 65%;
     margin: 30px auto;
     padding-left: 0;
     .item {
@@ -32,14 +32,28 @@
       width: 100%;
       padding: 20px 30px;
       position: relative;
+      display: flex;
+      justify-content: space-between;
 
-      .click-img {
+      .icon {
         position: absolute;
         right: 3%;
         top: 50%;
-        transform: translateY(-50%) rotate(-45deg);
         width: 25px;
       }
+      .open-icon {
+        transform: translateY(-50%);
+      }
+      .close-icon {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+    .open-faq {
+      margin-top: 1px;
+      font-size: 27px;
+      background-color: #303030;
+      color: #fff;
+      padding: 20px 30px;
     }
   }
 

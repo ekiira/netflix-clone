@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./faq.scss";
 import { faqs } from "./faqs";
@@ -6,20 +6,43 @@ import chevronRight from "../../assets/chevron-right.svg";
 import close from "../../assets/close.svg";
 
 function Faq() {
+  const [iFaqs, setIFaqs] = useState(faqs);
+  const onFaqClick = (id) => {
+    const newFaqs = iFaqs.map((faq) => {
+      if (faq.id === id) {
+        const updatedFaq = {
+          ...faq,
+          isOpen: !faq.isOpen,
+        };
+
+        return updatedFaq;
+      }
+      return faq;
+    });
+    setIFaqs(newFaqs);
+  };
   return (
     <div>
       <div className="faq">
         <div>
           <h3 className="title">Frequently Asked Questions</h3>
           <ul className="list">
-            {faqs.map((q, i) => (
-              <li key={i} className="item">
-                <button
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  {q.question}{" "}
-                    <img src={close} className='click-img' alt="show" />
+            {iFaqs.map((faq) => (
+              <li key={faq.id} className="item">
+                <button onClick={() => onFaqClick(faq.id)}>
+                  {faq.question}{" "}
+                  <img
+                    src={close}
+                    className={`icon ${faq.isOpen ? `open-icon` : `close-icon`}`}
+                    alt="show"
+                  />
                 </button>
+                {faq.isOpen ? (
+                  <div className="open-faq">
+                    <p>{faq.answerOne}</p>
+                    <p>{faq.answerTwo}</p>
+                  </div>
+                ) : null}
               </li>
             ))}
           </ul>
