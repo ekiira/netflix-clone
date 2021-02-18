@@ -1,0 +1,42 @@
+.footer {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  padding: 60px 0 30px 0;
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 18px;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+
+    .col {
+      width: 24%;
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+        margin-top: 0;
+        li {
+          margin-bottom: 15px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    padding-top: 10px;
+    font-size: 13px;
+  }
+}

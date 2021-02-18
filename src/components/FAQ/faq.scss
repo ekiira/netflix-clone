@@ -4,6 +4,7 @@
   background-color: black;
   color: #fff;
   padding: 70px 0;
+  border-bottom: 8px solid #222;
 
   .title {
     font-size: 50px;
@@ -35,6 +36,9 @@
       display: flex;
       justify-content: space-between;
 
+      &:focus {
+        outline: none;
+      }
       .icon {
         position: absolute;
         right: 3%;
