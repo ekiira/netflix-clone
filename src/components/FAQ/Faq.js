@@ -55,7 +55,7 @@ function Faq() {
             <div>
               <input type="email" placeholder="Email address" />
               <button>
-                GET STARTED{" "}
+                Get Started{" "}
                 <span>
                   <img
                     src={chevronRight}

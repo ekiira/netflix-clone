@@ -33,9 +33,12 @@ function Home() {
                 Ready to watch? Enter your email to create or restart your
                 membership.
               </p>
-              <div>
-                <input type="email" placeholder="Email address" />
-                <button>GET STARTED <span><img src={chevronRight} style={{width: '15px'}} alt='chevron-right'/></span></button>
+              <div className='email-W'>
+                <input type="email" placeholder="Email address" className='email'/>
+                <div className='email-btn-W'>
+                <button className='email-btn'>Get Started <span><img src={chevronRight} style={{width: '15px'}} alt='chevron-right'/></span></button>
+
+                </div>
               </div>
             </div>
           </div>
