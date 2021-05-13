@@ -24,7 +24,7 @@ function Faq() {
   return (
     <div>
       <div className="faq">
-        <div>
+        <div className='container'>
           <h3 className="title">Frequently Asked Questions</h3>
           <ul className="list">
             {iFaqs.map((faq) => (
