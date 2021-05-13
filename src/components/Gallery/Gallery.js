@@ -52,9 +52,12 @@ function Gallery() {
                       Downloading...
                     </div>
                   </div>
-                  <div>
+                  <div 
+                      style={{ display: 'flex', justifyContent: 'flex-end' }}
+                  
+                  >
                     <img
-                      style={{ width: "3em", marginLeft: "100%" }}
+                      style={{ width: "3em"}}
                       src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
                       alt="downloading"
                     />

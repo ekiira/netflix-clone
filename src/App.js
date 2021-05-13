@@ -13,7 +13,7 @@ function App() {
         <FAQ />
         <Footer />
       </div>
-      <div className="mobile">Coming Soon!</div>
+      <div className="mobile">Not Available on Mobile.</div>
     </>
   );
 }
