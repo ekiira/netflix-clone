@@ -5,7 +5,7 @@ import tv from "../../assets/tv.png";
 import mobile from "../../assets/mobile.jpg";
 import devicePile from "../../assets/device-pile.png";
 import boxShot from "../../assets/boxshot.png";
-
+import kids from "../../assets/netflix-kids.png";
 function Gallery() {
   return (
     <div className="gallery">
@@ -122,6 +122,27 @@ function Gallery() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div>
+                <div className="image-wrapper">
+                  <img src={kids} className="image" alt="kids" />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <h2 className="title">Create profiles for kids.</h2>
+              <p className="sub-title">
+                Send kids on adventures with their favorite characters in a
+                space made just for them—free with your membership.
+              </p>
             </div>
           </div>
         </div>
