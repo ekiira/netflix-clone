@@ -6,6 +6,7 @@ import mobile from "../../assets/mobile.jpg";
 import devicePile from "../../assets/device-pile.png";
 import boxShot from "../../assets/boxshot.png";
 import kids from "../../assets/netflix-kids.png";
+
 function Gallery() {
   return (
     <div className="gallery">
